@@ -1,0 +1,143 @@
+body{
+    background-color: #F5F5F5;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header .title{
+    font-size: 30px;
+    font-weight: bold;
+    color:#6699CC;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+tr{
+    height:25px;
+    text-align: center;
+
+}
+
+table{
+    width: 100%;
+}
+
+.employeesListContainer{
+    background-color: #F5F5F9;
+    width: 90%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: auto;
+    height: 80vh;
+    overflow:auto;
+}
+
+tr.listHeader{
+    font-weight: 600;
+    border-bottom: 1px solid;
+}
+
+button {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  #employeeForm{
+      display: none;
+  }
+
+  .form-popup{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .formContainer{
+     
+    width:50%;
+    background-color: #F5F5F9;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: auto;
+    height: 50vh;
+text-align: center;
+  }
+
+  form{
+    margin: auto;
+    width: 50%;
+  }
+
+  .formInput{
+      display: flex;
+      margin-top:20px;
+      text-align: left;
+
+  }
+  label{
+      margin-right:10px;
+      flex:2;
+  }
+input{
+    flex:3;
+    width:180px;
+    
+
+} 
+select{
+    flex:3;
+    width:180px;
+  
+
+}
+.popupTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color:#6699CC;
+    text-align: center;
+    padding: 10px 0px;
+}
+.submitFormBtn{
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: #6699CC;
+    font-weight: 500;
+    border-radius: 5px;
+    height: 30px;
+    width: 70%;
+}
+button.close{
+    margin-right: -90%;
+    margin-top: 5px;
+}
