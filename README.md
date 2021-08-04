@@ -10,7 +10,8 @@ MsSQL DB
 for running the projuct:
 1. downlowd the code
 2. get terminal directory on server folder
-3. ren "npm run dev"
+3. run 'npm install'
+4. run 'npm run dev'
 
 for access to DB insert environment variables
 
