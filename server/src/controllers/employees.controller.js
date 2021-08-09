@@ -35,7 +35,7 @@ export const createNewEmployee = async (req, res) => {
         res.json({Name, Email, Mobile, Department , HireDate})
     }
     catch(error){
-        res.status(500);s
+        res.status(500);
         res.send(error.massage);
     }
 };
@@ -73,7 +73,6 @@ export const getTotalEmployees = async (req, res) => {
 
     const {Name, Email, Mobile, Department} = req.body
 
-  // validating
   if(Name == null || Email == null || Mobile == null || Department == null){
     return res.status(400).json({msg:"Bad request. Please fill all fields"});
 }
