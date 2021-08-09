@@ -15,7 +15,6 @@ const getMethod = {
 function getEmployees(){
     fetch(url, getMethod)
     .then(res => res.json())
-    .then(data => console.log(data)) 
     .catch(err => console.log(err)) 
 }
 
@@ -23,7 +22,6 @@ function getEmployeesCount(){
     fetch(url + '/count', getMethod)
     .then(response => response.json())
     .then(data => {
-        console.log(data)
         employeesCount = data;
      }
      )
@@ -179,7 +177,7 @@ function showList(list){
         }
      }
      )
-    .catch(err => console.log(err)) // Do something with the error  
+    .catch(err => console.log(err)) 
 }
   
 document.addEventListener("DOMContentLoaded", function () {
